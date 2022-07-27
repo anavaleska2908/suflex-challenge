@@ -12,6 +12,7 @@ export const ButtonStyled = styled.button`
   font-weight: medium;
   cursor: pointer;
   max-width: 170px;
+  border: 1px solid var(--color-primary);
 
   :hover {
     background-color: var(--color-primary-50);
