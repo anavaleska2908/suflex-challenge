@@ -25,21 +25,3 @@ export const Container = styled.div`
   }
 
 `;
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  
-  button {
-    margin: 0;
-    padding: 0;
-    background-color: var(--white-1);
-    color: var(--color-primary);
-  }
-  
-  p {
-    color: var(--white-1)
-    
-  }
-`;

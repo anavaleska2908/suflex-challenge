@@ -1,9 +1,11 @@
 import { Container, Content, Shape } from "./styles";
+import { AiFillStar,AiOutlineStar } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { Button } from "../../Button";
-import { useHomePage } from "../../../providers/HomePage";
+import { useDashboardPage } from "../../../providers/DashboardPage";
 
 export const Modal = () => { 
-    const {setSwitchModal, characterModal} = useHomePage();
+    const {setSwitchModal, characterModal} = useDashboardPage();
     return (
         <Container>
             <Content>

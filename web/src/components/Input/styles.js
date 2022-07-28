@@ -13,7 +13,7 @@ export const InputStyled = styled.div`
   text-align: left;
   border: 1px solid var(--grey-1);
   border-radius: 10px;
-  color: var(--gray-0);
+  color: var(--grey-0);
   padding: 1rem;
   margin-bottom: 0.4em;
   width: 100%;

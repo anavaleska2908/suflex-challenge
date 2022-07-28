@@ -1,21 +1,23 @@
-import { Input } from "../Input";
 import { Button } from "../Button";
 import { Container } from './styles';
 import { BsSearch } from 'react-icons/bs';
+import {useDashboardPage} from "../../providers/DashboardPage";
 
 export const SearchBar = () => {
+    const { handleSearch, inputSearch, setInputSearch} = useDashboardPage();
+    
     return (
         <Container>
             <input
                 placeholder='Pesquisar'
                 value={inputSearch}
                 onChange={(event) => {
-                //setInputSearch(event.target.value);
-                //handleClick(event.target.value);
+                setInputSearch(event.target.value);
+                handleSearch(event.target.value);
                 }}
             />
             <Button
-                //onClick={ () => handleClick( inputSearch ) }
+                onClick={ () => handleSearch( inputSearch ) }
             >
                 <BsSearch size={12} />
             </Button>

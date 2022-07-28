@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardStyled = styled.ul`
+export const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
     background-color: var(--grey-3);
@@ -8,7 +8,7 @@ export const CardStyled = styled.ul`
     margin-bottom: 1em;
     box-sizing: border-box;
     border: 1px solid var(--grey-0);
-    width: 11.5em;  
+    width: 11.5em;
     
     img {
         border-top-right-radius: 8px;

@@ -1,7 +1,19 @@
 import { HomePageProvider } from "./HomePage";
+import { LoginPageProvider } from "./LoginPage";
+import { DashboardPageProvider } from "./DashboardPage";
+import { SignupPageProvider } from "./SignupPage";
 
 export const Providers = ({children}) => {
     return (
-        <HomePageProvider>{children}</HomePageProvider>
+        <SignupPageProvider>
+            <LoginPageProvider>
+                <DashboardPageProvider>                
+                    <HomePageProvider>
+                        { children }
+                    </HomePageProvider>
+                </DashboardPageProvider>
+        </LoginPageProvider>
+        </SignupPageProvider>
+        
     )
 }
